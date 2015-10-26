@@ -9,13 +9,11 @@ public class StringTask202 {
 
     public void findLengthOfWords() {
         String[] arrSt = str.split(" ");
-//                System.out.println(Arrays.toString(arrSt));
                 int[] arr = new int[arrSt.length];
                 for (int i = 0; i < arrSt.length; i++) {
                     arr[i] = arrSt[i].length();
 
                 }
-//                System.out.println(Arrays.toString(arr));
                 for (int barrier = 0; barrier < arr.length; barrier++) {
                     for (int index = barrier + 1; index < arr.length; index++) {
                         if (arr[barrier] > arr[index]) {
@@ -29,7 +27,6 @@ public class StringTask202 {
 
             }
         }
-//        System.out.println(Arrays.toString(arr));
         int maxLength = arr[arr.length - 1];
         int minLength = arr[0];
 
